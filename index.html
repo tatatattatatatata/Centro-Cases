@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Tarek Monla</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px 30px;
+      /* Adjusted padding */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #007bff;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      /* Ensure padding is included in total width */
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      width: 100px;
+      /* Adjust the width as needed */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Please input information on your case below</h1>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D36000000KaGU" method="POST">
+      <input type="hidden" name="orgid" value="00D36000000KaGU">
+      <input type="hidden" name="retURL" value="http://">
+
+      <label for="name">Contact Name</label>
+      <input id="name" maxlength="80" name="name" size="20" type="text" />
+
+      <label for="email">Email</label>
+      <input id="email" maxlength="80" name="email" size="20" type="text" />
+
+      <label for="phone">Phone</label>
+      <input id="phone" maxlength="40" name="phone" size="20" type="text" />
+
+      <label for="subject">Subject</label>
+      <input id="subject" maxlength="80" name="subject" size="20" type="text" />
+
+      <label for="description">Description</label>
+      <textarea id="description" name="description"></textarea>
+
+      <input type="submit" name="submit" value="Submit">
+    </form>
+  </div>
+  <img src="Centro Logo.png" alt="Centro Logo" class="logo">
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
